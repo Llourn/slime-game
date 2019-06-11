@@ -6,17 +6,17 @@ using Vector3 = UnityEngine.Vector3;
 
 public class SlimeController : MonoBehaviour
 {
-
     private Vector3 touchPosition;
-    private Rigidbody2D rb;
-    private Vector3 direction;
-    private float moveSpeed = 10f;
+    private Rigidbody2D _rb;
+    private Collider2D _col;
+
+    public LayerMask touchMask;
+    public float moveSpeed = 10.0f;
 
     private void Start()
     {
-
-        rb = GetComponent<Rigidbody2D>();
-        
+        _col = GetComponent<Collider2D>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -24,16 +24,39 @@ public class SlimeController : MonoBehaviour
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
+            Debug.Log(touch.position);
+            touchPosition = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, Camera.main.nearClipPlane));
 
-            touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            touchPosition.z = 0.0f;
-            direction = (touchPosition - transform.position);
-            rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
-
-            if (touch.phase == TouchPhase.Ended)
+            switch(touch.phase)
             {
-                rb.velocity = Vector2.zero;
+                case TouchPhase.Began:
+                    if(_col == Physics2D.OverlapPoint(touchPosition))
+                    {
+                        // Debug.Log("You touched the " + gameObject.name + "!!");
+                        // Debug.Log("TouchPosition: " + touchPosition);
+                        transform.position = new Vector2(touchPosition.x, touchPosition.y);
+                    }
+                    break;
+                case TouchPhase.Moved:
+                    if (_col == Physics2D.OverlapPoint(touchPosition))
+                        Debug.Log("Moving: " + touchPosition);
+                        _rb.MovePosition(touchPosition);
+                    break;
+                case TouchPhase.Ended:
+                    _rb.velocity = Vector2.zero;
+                    break;
+                default:
+                    break;
             }
+
+            //touchPosition.z = 0.0f;
+            //direction = (touchPosition - transform.position);
+            //rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
+
+            //if (touch.phase == TouchPhase.Ended)
+            //{
+            //    rb.velocity = Vector2.zero;
+            //}
         }
     }
 }
