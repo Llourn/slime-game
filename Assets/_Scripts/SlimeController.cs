@@ -32,8 +32,6 @@ public class SlimeController : MonoBehaviour
                 case TouchPhase.Began:
                     if(_col == Physics2D.OverlapPoint(touchPosition))
                     {
-                        // Debug.Log("You touched the " + gameObject.name + "!!");
-                        // Debug.Log("TouchPosition: " + touchPosition);
                         transform.position = new Vector2(touchPosition.x, touchPosition.y);
                     }
                     break;
@@ -49,14 +47,6 @@ public class SlimeController : MonoBehaviour
                     break;
             }
 
-            //touchPosition.z = 0.0f;
-            //direction = (touchPosition - transform.position);
-            //rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
-
-            //if (touch.phase == TouchPhase.Ended)
-            //{
-            //    rb.velocity = Vector2.zero;
-            //}
         }
     }
 }
