@@ -10,7 +10,6 @@ public class DeformExterior : MonoBehaviour
         MeshDeformer deformer = other.gameObject.GetComponent<MeshDeformer>();
         if (deformer)
         {
-            Debug.Log("Is this working??");
             deformer.AddDeformingForce(other.ClosestPoint(transform.position), moveForce);
         }
     }
