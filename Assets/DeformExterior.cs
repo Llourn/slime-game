@@ -5,12 +5,24 @@ using UnityEngine;
 public class DeformExterior : MonoBehaviour
 {
     public float moveForce = 10f;
-    private void OnTriggerStay(Collider other)
+    public float forceThreshold = 0.1f;
+
+    private MeshDeformer deformer;
+
+    private void Start()
     {
-        MeshDeformer deformer = other.gameObject.GetComponent<MeshDeformer>();
+        deformer = GetComponent<MeshDeformer>();
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
         if (deformer)
         {
+            Debug.Log("WORK DAMMIT");
             deformer.AddDeformingForce(other.ClosestPoint(transform.position), moveForce);
         }
     }
+
+
 }

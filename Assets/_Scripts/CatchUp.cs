@@ -11,12 +11,7 @@ public class CatchUp : MonoBehaviour
     public float distanceThreshold;
     public float minCatchUpSpeed = 1.0f;
 
-    
-    public Vector3 moveStretch;
-    public float stretchingThreshold;
-    public float stretchSpeed = 1.0f;
-
-
+    public float jumpForce = 10.0f;
 
     private void Update()
     {
@@ -24,6 +19,10 @@ public class CatchUp : MonoBehaviour
         Vector3 velocity = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0.0f, CrossPlatformInputManager.GetAxis("Vertical")) * moveSpeed;
         innerSlimeRB.AddForce(velocity, ForceMode.Force);
 
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            innerSlimeRB.AddForce(new Vector3(0.0f, jumpForce, 0.0f), ForceMode.Impulse);
+        }
 
 
         float slimeDistance = Vector3.Distance(innerSlime.position, outerSlime.position);
@@ -33,17 +32,6 @@ public class CatchUp : MonoBehaviour
             catchUpSpeed = (catchUpSpeed > minCatchUpSpeed) ? catchUpSpeed : minCatchUpSpeed;
             outerSlime.position = Vector3.Lerp(outerSlime.position, innerSlime.position, Time.deltaTime * catchUpSpeed);
         }
-
-        //if (Vector3.Distance(innerSlime.position, outerSlime.position) > stretchingThreshold)
-        //{
-        //    outerSlime.localScale = Vector3.Lerp(outerSlime.localScale, moveStretch, Time.deltaTime * stretchSpeed);
-        //}
-        //else
-        //{
-        //    outerSlime.localScale = Vector3.Lerp(outerSlime.localScale, Vector3.one, Time.deltaTime * stretchSpeed);
-        //}
-
-        //outerSlime.LookAt(innerSlime);
     }
 
     
