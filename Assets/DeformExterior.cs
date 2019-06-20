@@ -5,7 +5,6 @@ using UnityEngine;
 public class DeformExterior : MonoBehaviour
 {
     public float moveForce = 10f;
-    public float forceThreshold = 0.1f;
 
     private MeshDeformer deformer;
 

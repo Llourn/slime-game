@@ -8,6 +8,8 @@ public class MoveSlime : MonoBehaviour
 
     public float moveSpeed;
 
+    public bool keyboardInput = false;
+
     private void Start()
     {
         _rbody = GetComponent<Rigidbody>();
@@ -15,7 +17,12 @@ public class MoveSlime : MonoBehaviour
 
     private void Update()
     {
-        Vector3 velocity = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0.0f, CrossPlatformInputManager.GetAxis("Vertical")) * moveSpeed;
+        Vector3 velocity;
+        if (!keyboardInput)
+            velocity = new Vector3(CrossPlatformInputManager.GetAxis("Horizontal"), 0.0f, CrossPlatformInputManager.GetAxis("Vertical")) * moveSpeed;
+        else
+            velocity = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical")) * moveSpeed;
+
         _rbody.AddForce(velocity, ForceMode.Force);
     }
 }
