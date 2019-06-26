@@ -32,8 +32,10 @@ public class CollectHumans : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Human"))
+        if(other.CompareTag("Human") || other.gameObject.layer == 13)
         {
+
+            if (other.gameObject.layer == 13) Debug.Log("This is debris.");
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.SetParent(this.transform);
             other.transform.rotation = Random.rotation;
