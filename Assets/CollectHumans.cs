@@ -38,7 +38,7 @@ public class CollectHumans : MonoBehaviour
             if (other.gameObject.layer == 13) Debug.Log("This is debris.");
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.SetParent(this.transform);
-            other.transform.rotation = Random.rotation;
+            if(other.CompareTag("Human")) other.transform.rotation = Random.rotation;
         }
     }
 
