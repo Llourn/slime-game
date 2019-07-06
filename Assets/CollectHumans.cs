@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CollectHumans : MonoBehaviour
 {
@@ -32,13 +33,18 @@ public class CollectHumans : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Human") || other.gameObject.layer == 13)
+        if(other.CompareTag("Human"))
         {
+            other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            other.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+            other.transform.SetParent(this.transform);
+            other.transform.rotation = Random.rotation;
+        }
 
-            if (other.gameObject.layer == 13) Debug.Log("This is debris.");
+        if(other.gameObject.layer == 13)
+        {
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.SetParent(this.transform);
-            if(other.CompareTag("Human")) other.transform.rotation = Random.rotation;
         }
     }
 
