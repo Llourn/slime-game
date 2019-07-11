@@ -17,8 +17,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - Slime Exterior
-  - Slime Interior
+  - Player
+  - 
   - Humans
   - Ground
   - Debris
@@ -43,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Slime
+    uniqueID: 3936063543
+    locked: 0
+  - name: Slime Trail
+    uniqueID: 3927289203
     locked: 0
