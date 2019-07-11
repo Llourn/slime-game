@@ -16,10 +16,8 @@ public class RunAway : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Distance: " + Vector3.Distance(slime.position, this.transform.position));
         if(Vector3.Distance(slime.position, this.transform.position) < 10.0f)
         {
-            Debug.Log("TRIGGERED");
             agent.destination = target.position;
             flee = true;
         }

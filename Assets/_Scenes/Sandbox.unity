@@ -247,7 +247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2121472
 Transform:
   m_ObjectHideFlags: 0
@@ -1355,6 +1355,7 @@ GameObject:
   - component: {fileID: 58207313}
   - component: {fileID: 58207312}
   - component: {fileID: 58207311}
+  - component: {fileID: 58207314}
   m_Layer: 11
   m_Name: Carl (2)
   m_TagString: Human
@@ -1428,6 +1429,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &58207314
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58207309}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &63236740
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,6 +2088,7 @@ GameObject:
   - component: {fileID: 94059047}
   - component: {fileID: 94059046}
   - component: {fileID: 94059045}
+  - component: {fileID: 94059048}
   m_Layer: 11
   m_Name: Carl (5)
   m_TagString: Human
@@ -2144,6 +2162,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &94059048
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94059043}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &97786201
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,6 +3120,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148084751}
   m_Mesh: {fileID: -3537709356157935800, guid: 3a42079fedfcd3d4aa96857e401b266a, type: 3}
+--- !u!1 &150999324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150999327}
+  - component: {fileID: 150999326}
+  - component: {fileID: 150999325}
+  m_Layer: 0
+  m_Name: Player - Slime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!143 &150999325
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150999324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0
+  m_Radius: 0.6
+  m_SlopeLimit: 45
+  m_StepOffset: 0.1
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.09, z: 0}
+--- !u!114 &150999326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150999324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32c16a8cddc52544b5fcb8a89290dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 386162605}
+  speed: 2
+  rotateSpeed: 1
+  jumpSpeed: 8
+  gravity: 20
+--- !u!4 &150999327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150999324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.64, y: 0.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 494967738}
+  - {fileID: 1235987237}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &152072921
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,6 +5297,7 @@ GameObject:
   - component: {fileID: 267509069}
   - component: {fileID: 267509068}
   - component: {fileID: 267509067}
+  - component: {fileID: 267509070}
   m_Layer: 11
   m_Name: Carl (9)
   m_TagString: Human
@@ -5267,6 +5371,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &267509070
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267509065}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &273487535
 GameObject:
   m_ObjectHideFlags: 0
@@ -6216,6 +6336,7 @@ GameObject:
   - component: {fileID: 308459276}
   - component: {fileID: 308459275}
   - component: {fileID: 308459274}
+  - component: {fileID: 308459277}
   m_Layer: 11
   m_Name: Carl (7)
   m_TagString: Human
@@ -6289,6 +6410,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &308459277
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308459272}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &321014816
 GameObject:
   m_ObjectHideFlags: 0
@@ -6411,6 +6548,7 @@ GameObject:
   - component: {fileID: 323541857}
   - component: {fileID: 323541856}
   - component: {fileID: 323541855}
+  - component: {fileID: 323541858}
   m_Layer: 11
   m_Name: Carl (1)
   m_TagString: Human
@@ -6484,6 +6622,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &323541858
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323541853}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &324108209
 GameObject:
   m_ObjectHideFlags: 0
@@ -7587,6 +7741,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378187747}
   m_Mesh: {fileID: 855131390749405241, guid: 3a42079fedfcd3d4aa96857e401b266a, type: 3}
+--- !u!4 &386162604 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 813290888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &386162605 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 0e81f5d798f40074c8360a36e43838d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 813290888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &394945310
 GameObject:
   m_ObjectHideFlags: 0
@@ -8490,6 +8656,7 @@ GameObject:
   - component: {fileID: 435143117}
   - component: {fileID: 435143116}
   - component: {fileID: 435143115}
+  - component: {fileID: 435143118}
   m_Layer: 11
   m_Name: Carl (9)
   m_TagString: Human
@@ -8563,6 +8730,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &435143118
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435143113}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &437084341
 GameObject:
   m_ObjectHideFlags: 0
@@ -8905,6 +9088,7 @@ GameObject:
   - component: {fileID: 476647990}
   - component: {fileID: 476647989}
   - component: {fileID: 476647988}
+  - component: {fileID: 476647991}
   m_Layer: 11
   m_Name: Carl (6)
   m_TagString: Human
@@ -8978,6 +9162,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &476647991
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476647986}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &483951210
 GameObject:
   m_ObjectHideFlags: 0
@@ -9490,7 +9690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c7fdccd732b1f4fbaca129b0453fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 75
 --- !u!114 &493833546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9520,6 +9719,37 @@ MonoBehaviour:
   absorbSpeed: 0.75
   disintegrateSpeed: 0.25
   smallestSize: {x: 0.03, y: 0.03, z: 0.03}
+--- !u!1 &494967737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 494967738}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &494967738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494967737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 386162604}
+  m_Father: {fileID: 150999327}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &497864435
 GameObject:
   m_ObjectHideFlags: 0
@@ -10442,6 +10672,7 @@ GameObject:
   - component: {fileID: 530770625}
   - component: {fileID: 530770624}
   - component: {fileID: 530770623}
+  - component: {fileID: 530770626}
   m_Layer: 11
   m_Name: Carl (5)
   m_TagString: Human
@@ -10515,6 +10746,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &530770626
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530770621}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &532352959
 GameObject:
   m_ObjectHideFlags: 0
@@ -10637,6 +10884,7 @@ GameObject:
   - component: {fileID: 533434820}
   - component: {fileID: 533434819}
   - component: {fileID: 533434818}
+  - component: {fileID: 533434821}
   m_Layer: 11
   m_Name: Carl (3)
   m_TagString: Human
@@ -10710,6 +10958,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &533434821
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533434816}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &536433588
 GameObject:
   m_ObjectHideFlags: 0
@@ -11699,6 +11963,7 @@ GameObject:
   - component: {fileID: 595170296}
   - component: {fileID: 595170295}
   - component: {fileID: 595170294}
+  - component: {fileID: 595170297}
   m_Layer: 11
   m_Name: Carl (5)
   m_TagString: Human
@@ -11772,6 +12037,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &595170297
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595170292}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &595488644
 GameObject:
   m_ObjectHideFlags: 0
@@ -13037,6 +13318,7 @@ GameObject:
   - component: {fileID: 705164656}
   - component: {fileID: 705164655}
   - component: {fileID: 705164654}
+  - component: {fileID: 705164657}
   m_Layer: 11
   m_Name: Carl (4)
   m_TagString: Human
@@ -13110,6 +13392,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &705164657
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705164652}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &708636423
 GameObject:
   m_ObjectHideFlags: 0
@@ -13232,6 +13530,7 @@ GameObject:
   - component: {fileID: 708832962}
   - component: {fileID: 708832961}
   - component: {fileID: 708832960}
+  - component: {fileID: 708832963}
   m_Layer: 11
   m_Name: Carl (2)
   m_TagString: Human
@@ -13305,6 +13604,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &708832963
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708832958}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &716428282
 GameObject:
   m_ObjectHideFlags: 0
@@ -13801,6 +14116,7 @@ GameObject:
   - component: {fileID: 741628132}
   - component: {fileID: 741628131}
   - component: {fileID: 741628130}
+  - component: {fileID: 741628133}
   m_Layer: 11
   m_Name: Carl (8)
   m_TagString: Human
@@ -13874,6 +14190,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &741628133
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741628128}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &752622901
 GameObject:
   m_ObjectHideFlags: 0
@@ -14719,6 +15051,130 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798892825}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &813290888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 494967738}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 184dacc339fa90e4783e14c88c75c27b, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1984479
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.0008523166
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: 0.59754497
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: -0.19084632
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.5975451
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 1.1897522
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 7.386855
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561110372842451503, guid: 0e81f5d798f40074c8360a36e43838d5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d7b91b515f27a2f4d9ac1ca82706d65c, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e81f5d798f40074c8360a36e43838d5, type: 3}
 --- !u!1 &818408546
 GameObject:
   m_ObjectHideFlags: 0
@@ -14973,6 +15429,7 @@ GameObject:
   - component: {fileID: 851977489}
   - component: {fileID: 851977488}
   - component: {fileID: 851977487}
+  - component: {fileID: 851977490}
   m_Layer: 11
   m_Name: Carl (4)
   m_TagString: Human
@@ -15046,6 +15503,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &851977490
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851977485}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &857371814
 GameObject:
   m_ObjectHideFlags: 0
@@ -15590,6 +16063,7 @@ GameObject:
   - component: {fileID: 869652809}
   - component: {fileID: 869652808}
   - component: {fileID: 869652807}
+  - component: {fileID: 869652810}
   m_Layer: 11
   m_Name: Carl (3)
   m_TagString: Human
@@ -15663,6 +16137,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &869652810
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869652805}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &873110540
 GameObject:
   m_ObjectHideFlags: 0
@@ -15785,6 +16275,7 @@ GameObject:
   - component: {fileID: 874535388}
   - component: {fileID: 874535387}
   - component: {fileID: 874535386}
+  - component: {fileID: 874535389}
   m_Layer: 11
   m_Name: Carl (1)
   m_TagString: Human
@@ -15858,6 +16349,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &874535389
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874535384}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &874835819
 GameObject:
   m_ObjectHideFlags: 0
@@ -16091,6 +16598,7 @@ GameObject:
   - component: {fileID: 891823608}
   - component: {fileID: 891823607}
   - component: {fileID: 891823606}
+  - component: {fileID: 891823609}
   m_Layer: 11
   m_Name: Carl (1)
   m_TagString: Human
@@ -16164,6 +16672,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &891823609
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891823604}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &893953230
 GameObject:
   m_ObjectHideFlags: 0
@@ -17645,6 +18169,7 @@ GameObject:
   - component: {fileID: 966357968}
   - component: {fileID: 966357967}
   - component: {fileID: 966357966}
+  - component: {fileID: 966357969}
   m_Layer: 11
   m_Name: Carl (8)
   m_TagString: Human
@@ -17718,6 +18243,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &966357969
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966357964}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &973142477
 GameObject:
   m_ObjectHideFlags: 0
@@ -17730,6 +18271,7 @@ GameObject:
   - component: {fileID: 973142481}
   - component: {fileID: 973142480}
   - component: {fileID: 973142479}
+  - component: {fileID: 973142482}
   m_Layer: 11
   m_Name: Carl (8)
   m_TagString: Human
@@ -17803,6 +18345,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &973142482
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973142477}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &990969515
 GameObject:
   m_ObjectHideFlags: 0
@@ -17815,6 +18373,7 @@ GameObject:
   - component: {fileID: 990969519}
   - component: {fileID: 990969518}
   - component: {fileID: 990969517}
+  - component: {fileID: 990969520}
   m_Layer: 11
   m_Name: Carl
   m_TagString: Human
@@ -17888,6 +18447,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &990969520
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990969515}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &991625540
 GameObject:
   m_ObjectHideFlags: 0
@@ -18090,6 +18665,7 @@ GameObject:
   - component: {fileID: 997201726}
   - component: {fileID: 997201725}
   - component: {fileID: 997201724}
+  - component: {fileID: 997201727}
   m_Layer: 11
   m_Name: Carl (2)
   m_TagString: Human
@@ -18163,6 +18739,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &997201727
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997201722}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1009034859
 GameObject:
   m_ObjectHideFlags: 0
@@ -19011,6 +19603,7 @@ GameObject:
   - component: {fileID: 1075143467}
   - component: {fileID: 1075143466}
   - component: {fileID: 1075143465}
+  - component: {fileID: 1075143468}
   m_Layer: 11
   m_Name: Carl (6)
   m_TagString: Human
@@ -19084,6 +19677,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1075143468
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075143463}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1084231570
 GameObject:
   m_ObjectHideFlags: 0
@@ -21002,6 +21611,7 @@ GameObject:
   - component: {fileID: 1211583124}
   - component: {fileID: 1211583123}
   - component: {fileID: 1211583122}
+  - component: {fileID: 1211583125}
   m_Layer: 11
   m_Name: Carl (5)
   m_TagString: Human
@@ -21075,6 +21685,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1211583125
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211583120}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1215200300
 GameObject:
   m_ObjectHideFlags: 0
@@ -21327,6 +21953,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1235987236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235987237}
+  m_Layer: 0
+  m_Name: Slimetrail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1235987237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235987236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 150999327}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1248376959
 GameObject:
   m_ObjectHideFlags: 0
@@ -21561,6 +22217,7 @@ GameObject:
   - component: {fileID: 1258455525}
   - component: {fileID: 1258455524}
   - component: {fileID: 1258455523}
+  - component: {fileID: 1258455526}
   m_Layer: 11
   m_Name: Carl (7)
   m_TagString: Human
@@ -21634,6 +22291,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1258455526
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258455521}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1273014368
 GameObject:
   m_ObjectHideFlags: 0
@@ -22275,7 +22948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -510.73727
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
       propertyPath: m_AnchorMin.x
@@ -22303,7 +22976,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -243
+      value: -341.95346
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.3239904
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.017027803
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.005832513
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9458892
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.504984
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9529ecc3d479da5499993355e6c2cb4f, type: 3}
@@ -24088,7 +24785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c7fdccd732b1f4fbaca129b0453fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 10
 --- !u!23 &1366360482
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24357,6 +25053,7 @@ GameObject:
   - component: {fileID: 1412859804}
   - component: {fileID: 1412859803}
   - component: {fileID: 1412859802}
+  - component: {fileID: 1412859805}
   m_Layer: 11
   m_Name: Carl
   m_TagString: Human
@@ -24430,6 +25127,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1412859805
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412859800}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1421791087
 GameObject:
   m_ObjectHideFlags: 0
@@ -24552,6 +25265,7 @@ GameObject:
   - component: {fileID: 1422236273}
   - component: {fileID: 1422236272}
   - component: {fileID: 1422236271}
+  - component: {fileID: 1422236274}
   m_Layer: 11
   m_Name: Carl (7)
   m_TagString: Human
@@ -24625,6 +25339,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1422236274
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422236269}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1429021782
 GameObject:
   m_ObjectHideFlags: 0
@@ -27051,6 +27781,7 @@ GameObject:
   - component: {fileID: 1583847630}
   - component: {fileID: 1583847629}
   - component: {fileID: 1583847628}
+  - component: {fileID: 1583847631}
   m_Layer: 11
   m_Name: Carl (6)
   m_TagString: Human
@@ -27124,6 +27855,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1583847631
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583847626}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1593897425
 GameObject:
   m_ObjectHideFlags: 0
@@ -27422,8 +28169,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600852777}
-  m_LocalRotation: {x: 0.38268322, y: -0, z: -0, w: 0.9238797}
-  m_LocalPosition: {x: 0, y: 10.31, z: -6.36}
+  m_LocalRotation: {x: 0.32399014, y: 0.017027944, z: -0.0058325594, w: 0.94588923}
+  m_LocalPosition: {x: 0.0033539534, y: 10.357859, z: -12.823765}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28053,6 +28800,7 @@ GameObject:
   - component: {fileID: 1678379304}
   - component: {fileID: 1678379303}
   - component: {fileID: 1678379302}
+  - component: {fileID: 1678379305}
   m_Layer: 11
   m_Name: Carl (3)
   m_TagString: Human
@@ -28126,6 +28874,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1678379305
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678379300}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1686150909
 GameObject:
   m_ObjectHideFlags: 0
@@ -28872,6 +29636,7 @@ GameObject:
   - component: {fileID: 1729523504}
   - component: {fileID: 1729523505}
   - component: {fileID: 1729523502}
+  - component: {fileID: 1729523503}
   m_Layer: 11
   m_Name: Carl
   m_TagString: Human
@@ -28909,6 +29674,22 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1729523503
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729523500}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!195 &1729523504
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29379,6 +30160,7 @@ GameObject:
   - component: {fileID: 1759737070}
   - component: {fileID: 1759737069}
   - component: {fileID: 1759737068}
+  - component: {fileID: 1759737071}
   m_Layer: 11
   m_Name: Carl (6)
   m_TagString: Human
@@ -29452,6 +30234,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1759737071
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759737066}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1772159853
 GameObject:
   m_ObjectHideFlags: 0
@@ -30172,6 +30970,7 @@ GameObject:
   - component: {fileID: 1817092620}
   - component: {fileID: 1817092619}
   - component: {fileID: 1817092618}
+  - component: {fileID: 1817092621}
   m_Layer: 11
   m_Name: Carl (2)
   m_TagString: Human
@@ -30245,6 +31044,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1817092621
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817092616}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1819495682
 GameObject:
   m_ObjectHideFlags: 0
@@ -30458,6 +31273,7 @@ GameObject:
   - component: {fileID: 1830555586}
   - component: {fileID: 1830555585}
   - component: {fileID: 1830555584}
+  - component: {fileID: 1830555587}
   m_Layer: 11
   m_Name: Carl (4)
   m_TagString: Human
@@ -30531,6 +31347,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1830555587
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830555582}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1850343200
 GameObject:
   m_ObjectHideFlags: 0
@@ -31637,6 +32469,7 @@ GameObject:
   - component: {fileID: 1920143374}
   - component: {fileID: 1920143373}
   - component: {fileID: 1920143372}
+  - component: {fileID: 1920143375}
   m_Layer: 11
   m_Name: Carl (7)
   m_TagString: Human
@@ -31710,6 +32543,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1920143375
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920143370}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1922964178
 GameObject:
   m_ObjectHideFlags: 0
@@ -32553,6 +33402,7 @@ GameObject:
   - component: {fileID: 1963817154}
   - component: {fileID: 1963817153}
   - component: {fileID: 1963817152}
+  - component: {fileID: 1963817155}
   m_Layer: 11
   m_Name: Carl (9)
   m_TagString: Human
@@ -32626,6 +33476,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1963817155
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963817150}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1964313633
 GameObject:
   m_ObjectHideFlags: 0
@@ -32638,6 +33504,7 @@ GameObject:
   - component: {fileID: 1964313637}
   - component: {fileID: 1964313636}
   - component: {fileID: 1964313635}
+  - component: {fileID: 1964313638}
   m_Layer: 11
   m_Name: Carl
   m_TagString: Human
@@ -32711,6 +33578,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1964313638
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964313633}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1984986317
 GameObject:
   m_ObjectHideFlags: 0
@@ -32723,6 +33606,7 @@ GameObject:
   - component: {fileID: 1984986321}
   - component: {fileID: 1984986320}
   - component: {fileID: 1984986319}
+  - component: {fileID: 1984986322}
   m_Layer: 11
   m_Name: Carl (8)
   m_TagString: Human
@@ -32796,6 +33680,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1984986322
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984986317}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1985542130
 GameObject:
   m_ObjectHideFlags: 0
@@ -32808,6 +33708,7 @@ GameObject:
   - component: {fileID: 1985542134}
   - component: {fileID: 1985542133}
   - component: {fileID: 1985542132}
+  - component: {fileID: 1985542135}
   m_Layer: 11
   m_Name: Carl (3)
   m_TagString: Human
@@ -32881,6 +33782,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &1985542135
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985542130}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1994742167
 GameObject:
   m_ObjectHideFlags: 0
@@ -33095,6 +34012,7 @@ GameObject:
   - component: {fileID: 2014232406}
   - component: {fileID: 2014232405}
   - component: {fileID: 2014232404}
+  - component: {fileID: 2014232407}
   m_Layer: 11
   m_Name: Carl (4)
   m_TagString: Human
@@ -33168,6 +34086,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &2014232407
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014232402}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2020421914
 GameObject:
   m_ObjectHideFlags: 0
@@ -33806,6 +34740,7 @@ GameObject:
   - component: {fileID: 2037669355}
   - component: {fileID: 2037669354}
   - component: {fileID: 2037669353}
+  - component: {fileID: 2037669356}
   m_Layer: 11
   m_Name: Carl (9)
   m_TagString: Human
@@ -33879,6 +34814,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &2037669356
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037669351}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2041742555
 GameObject:
   m_ObjectHideFlags: 0
@@ -35121,6 +36072,7 @@ GameObject:
   - component: {fileID: 2136145924}
   - component: {fileID: 2136145923}
   - component: {fileID: 2136145922}
+  - component: {fileID: 2136145925}
   m_Layer: 11
   m_Name: Carl (1)
   m_TagString: Human
@@ -35194,6 +36146,22 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!54 &2136145925
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136145920}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2136406784
 GameObject:
   m_ObjectHideFlags: 0
