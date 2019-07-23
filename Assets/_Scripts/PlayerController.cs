@@ -20,14 +20,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Grounded? " + characterController.isGrounded);
         if(characterController.isGrounded)
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
             moveDirection *= speed;
         }
         moveDirection.y -= gravity * Time.deltaTime;
-        Debug.Log("Move Velocity: " + moveDirection);
 
         Vector3 rotTarget = new Vector3(moveDirection.x, 0.0f, moveDirection.z);
         animator.SetFloat("moveSpeed", rotTarget.magnitude);
