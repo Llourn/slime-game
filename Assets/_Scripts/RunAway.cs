@@ -22,7 +22,7 @@ public class RunAway : MonoBehaviour
             flee = true;
         }
 
-        if(Vector3.Distance(transform.position, agent.destination) < 0.5f & flee)
+        if(Vector3.Distance(transform.position, agent.destination) < 1f & flee)
         {
             agent.isStopped = true;
         }

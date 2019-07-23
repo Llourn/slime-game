@@ -164,10 +164,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5733632424327107988}
   - component: {fileID: 5733632424327107977}
-  - component: {fileID: 5733632424327107976}
   - component: {fileID: 5733632424327107991}
   - component: {fileID: 5733632424327107990}
   - component: {fileID: 5733632424327107979}
+  - component: {fileID: 7703636303186412455}
   m_Layer: 11
   m_Name: Human
   m_TagString: Human
@@ -213,20 +213,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
---- !u!114 &5733632424327107976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5733632424327107989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1d2b428a987c442902142c2b6b1dc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  slime: {fileID: 0}
 --- !u!136 &5733632424327107991
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -281,3 +267,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 86285f93d5783a74fb2fc44bea7fb68f, type: 2}
   headRenderer: {fileID: 5733632423927801779}
   shirtRenderer: {fileID: 5733632423952819174}
+--- !u!114 &7703636303186412455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5733632424327107989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771e3a43f93d69d4bbc66475373208b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

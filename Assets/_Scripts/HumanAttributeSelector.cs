@@ -3,12 +3,12 @@ using UnityEngine.AI;
 
 public class HumanAttributeSelector : MonoBehaviour
 {
-    [SerializeField] HumanAttributes[] attributes;
-    [SerializeField] Renderer headRenderer;
-    [SerializeField] Renderer shirtRenderer;
+    [SerializeField] private HumanAttributes[] attributes = null;
+    [SerializeField] private Renderer headRenderer = null;
+    [SerializeField] private Renderer shirtRenderer = null;
 
-    HumanAttributes selectedAttributes;
-    NavMeshAgent agent;
+    private HumanAttributes selectedAttributes;
+    private NavMeshAgent agent;
     
 
     private void Start()
