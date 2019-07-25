@@ -3,7 +3,12 @@ using UnityEngine;
 
 public class HidingSpotManager : MonoBehaviour
 {
-    public List<Transform> hidingSpots = new List<Transform>();
+    public List<Transform> hidingSpots;
+
+    private void Awake()
+    {
+        hidingSpots = new List<Transform>();
+    }
 
     public void RegisterSpot(Transform spot)
     {

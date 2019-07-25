@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HidingSpot : MonoBehaviour
 {
@@ -10,6 +8,7 @@ public class HidingSpot : MonoBehaviour
     private void Start()
     {
         GameManager.instance.hidingSpotManager.RegisterSpot(this.transform);
+        Debug.Log("START HIDING SPOT");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,6 +37,10 @@ public class HidingSpot : MonoBehaviour
     private void UnRegisterHidingSpot()
     {
         GameManager.instance.hidingSpotManager.UnRegisterSpot(this.transform);
+    }
+    public bool IsFull()
+    {
+        return hidingCount >= maxHidingCount;
     }
 
 }

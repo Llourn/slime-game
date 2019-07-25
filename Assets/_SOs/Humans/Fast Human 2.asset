@@ -16,4 +16,4 @@ MonoBehaviour:
   shirtColorMat: {fileID: 2100000, guid: 415889af329823f4a886d3b7c11f1214, type: 2}
   heightMultiplier: 2
   widthMultiplier: 2
-  moveSpeedMultiplier: 5
+  moveSpeedMultiplier: 3

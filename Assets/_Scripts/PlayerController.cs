@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
         characterController.Move(moveDirection * Time.deltaTime);
 
         float step = rotateSpeed * Time.deltaTime;
+        if (rotTarget == Vector3.zero) return;
         transform.rotation = Quaternion.LookRotation(rotTarget);
     }
 }

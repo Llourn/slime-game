@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 
     public HidingSpotManager hidingSpotManager;
 
+    public GameObject player;
+
     private void Awake()
     {
         if (instance == null)
@@ -14,10 +16,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
-    }
 
-    private void Start()
-    {
+        player = GameObject.FindGameObjectWithTag("Slime");
         hidingSpotManager = GetComponent<HidingSpotManager>();
     }
 }
