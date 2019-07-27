@@ -4,10 +4,15 @@ using UnityEngine.AI;
 public class FindSafety : MonoBehaviour
 {
     public Transform target;
-    private  Transform slime;
+    private Transform slime;
     private NavMeshAgent agent;
     private bool isHidden = false;
     private bool isEaten = false;
+
+    public float wanderRadius;
+    public float wanderTimer;
+
+    private float timer;
 
     private void Start()
     {
@@ -15,46 +20,54 @@ public class FindSafety : MonoBehaviour
         slime = GameManager.instance.player.transform;
     }
 
-    private void Update()
+    public bool IsSafe()
     {
-        if (isEaten) return;
-
-        if (Vector3.Distance(slime.position, this.transform.position) < 10.0f && !isHidden)
-        {
-            SelectTarget();
-        }
-
-        if (Vector3.Distance(transform.position, agent.destination) < 0.2f & isHidden)
-        {
-            agent.isStopped = true;
-        }
+        return isHidden;
     }
 
-    private void SelectTarget()
+    public void Ate()
+    {
+        isEaten = true;
+    }
+
+    public bool isAte()
+    {
+        return isEaten;
+    }
+
+    public void SelectTarget()
     {
         if (isEaten) return;
-        Debug.Log("SELECT TARGET");
+        target = null;
         float distance = Mathf.Infinity;
-
-
-        for(int i = 0; i < GameManager.instance.hidingSpotManager.hidingSpots.Count; i++)
+        for (int i = 0; i < GameManager.instance.hidingSpotManager.hidingSpots.Count; i++)
         {
-            IsTheHidingSpotBetweenMeAndTheSlime(GameManager.instance.hidingSpotManager.hidingSpots[i].position);
+            if (GameManager.instance.hidingSpotManager.hidingSpots.Count <= 0 || 
+                IsTheHidingSpotBetweenMeAndTheSlime(GameManager.instance.hidingSpotManager.hidingSpots[i].position) < 90.0f) continue;
+
             float t = Vector3.Distance(this.transform.position, GameManager.instance.hidingSpotManager.hidingSpots[i].position);
             if (t < distance) target = GameManager.instance.hidingSpotManager.hidingSpots[i];
         }
 
+        if(target == null)
+        {
+            Vector3 generalTarget = (transform.position - slime.position) * Vector3.Distance(transform.position, slime.position);
+            agent.destination = generalTarget;
+            return;
+        }
         agent.destination = target.position;
-
     }
 
     private float IsTheHidingSpotBetweenMeAndTheSlime(Vector3 hidingSpot)
     {
-        Vector3 slimeDirection = slime.position - transform.position;
-        Vector3 hidingSpotDirection = hidingSpot - transform.position;
+        Vector3 thisPosition = new Vector3(transform.position.x, 0.0f, transform.position.z);
+        Vector3 objectAPosition = new Vector3(hidingSpot.x, 0.0f, hidingSpot.z);
+        Vector3 objectBPosition = new Vector3(slime.position.x, 0.0f, slime.position.z);
 
-        float angle = Vector3.SignedAngle(slimeDirection, hidingSpotDirection, Vector3.up);
-        Debug.Log("ANGLE: " + angle);
+        Vector3 directionA = objectAPosition - thisPosition;
+        Vector3 directionB = objectBPosition - thisPosition;
+
+        float angle = Vector3.Angle(directionA, directionB);
         return angle;
     }
 
@@ -65,29 +78,24 @@ public class FindSafety : MonoBehaviour
         if (target.gameObject.GetComponent<HidingSpot>().IsFull()) SelectTarget();
     }
 
-    private void OnTriggerEnter(Collider other)
+    public Transform GetTarget()
     {
-        if(other.CompareTag("Capacity Check"))
-        {
-            if(target.gameObject.GetComponent<HidingSpot>().IsFull()) SelectTarget();
-        }
-
-        if (other.CompareTag("Hiding Spot") && !isEaten)
-        {
-            agent.isStopped = true;
-            isHidden = true;
-        }
-
-        if (other.CompareTag("Slime")) isEaten = true;
+        return target;
     }
 
-    private void OnTriggerExit(Collider other)
+    public void StartHiding()
     {
-        if (other.CompareTag("Hiding Spot") && !isEaten)
-        {
-            Debug.Log("NOT HIDDEN");
-            SelectTarget();
-            isHidden = false;
-        }
+        if (isEaten) return;
+        agent.isStopped = true;
+        isHidden = true;
     }
+
+    public void StopHiding()
+    {
+        if (isEaten) return;
+        agent.isStopped = false;
+        isHidden = false;
+        SelectTarget();
+    }
+
 }

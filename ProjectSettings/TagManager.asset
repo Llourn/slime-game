@@ -9,6 +9,9 @@ TagManager:
   - Debris
   - Hiding Spot
   - Capacity Check
+  - Eater
+  - Eaten
+  - RUN
   layers:
   - Default
   - TransparentFX

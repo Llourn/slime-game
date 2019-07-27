@@ -231,6 +231,66 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &921513667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921513668}
+  - component: {fileID: 921513670}
+  - component: {fileID: 921513669}
+  m_Layer: 0
+  m_Name: Destruction Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &921513668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921513667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5304526389024846932}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921513670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921513667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce52610029f1d5641bc48ef188240544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unbroken: {fileID: 9207098704271771207}
+  broken: {fileID: 8691700593329611367}
+  hidingSpot: {fileID: 4032654702003465048}
+--- !u!65 &921513669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921513667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.428617, y: 3.1046274, z: 2.0864956}
+  m_Center: {x: 0.01831925, y: 1.6274718, z: -0.005859077}
 --- !u!1 &1565110723
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +303,7 @@ GameObject:
   - component: {fileID: 1565110725}
   m_Layer: 0
   m_Name: Capacity Check
-  m_TagString: Untagged
+  m_TagString: Capacity Check
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6018,8 +6078,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6825726796414353863}
-  - component: {fileID: 6825726796414353860}
-  - component: {fileID: 6825726796414353862}
   m_Layer: 0
   m_Name: Small blue apartment building
   m_TagString: Untagged
@@ -6043,33 +6101,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -149.99901, z: 0}
---- !u!114 &6825726796414353860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6825726796414353861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce52610029f1d5641bc48ef188240544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unbroken: {fileID: 9207098704271771207}
-  broken: {fileID: 8691700593329611367}
---- !u!65 &6825726796414353862
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6825726796414353861}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.428617, y: 3.1046274, z: 2.0864956}
-  m_Center: {x: 0.01831925, y: 1.6274718, z: -0.005859077}
 --- !u!1 &6899492815418159415
 GameObject:
   m_ObjectHideFlags: 0
@@ -7093,7 +7124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7921202612508720203}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.543, z: 0}
+  m_LocalPosition: {x: 0, y: 0.543, z: -0.298}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5304526389024846932}
@@ -7110,7 +7141,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6180456, y: 1, z: 1.685509}
+  m_Size: {x: 1.6180456, y: 1, z: 0.96}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7921202612508720205
 MonoBehaviour:
@@ -7794,9 +7825,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5675738926516555892}
-  m_Layer: 13
+  - component: {fileID: 1881165080}
+  - component: {fileID: 1881165079}
+  m_Layer: 0
   m_Name: Small apartment building 2 - Destructible
-  m_TagString: Untagged
+  m_TagString: RUN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7883,6 +7916,35 @@ Transform:
   m_Father: {fileID: 6825726796414353863}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1881165080
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8691700593329611367}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1881165079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8691700593329611367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8907087, y: 0.7911902, z: 1.8430396}
+  m_Center: {x: -0.013978904, y: 0.35931548, z: -0.013286241}
 --- !u!1 &8971077347339598902
 GameObject:
   m_ObjectHideFlags: 0
@@ -8216,6 +8278,7 @@ Transform:
   - {fileID: 4032654702003465048}
   - {fileID: 1565110724}
   - {fileID: 6921755211301793525}
+  - {fileID: 921513668}
   m_Father: {fileID: 6825726796414353863}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

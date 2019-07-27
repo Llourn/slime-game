@@ -30,6 +30,21 @@ public class Collect : MonoBehaviour
         }
     }
 
+    public void CollectHumans(GameObject obj)
+    {
+        obj.GetComponent<Rigidbody>().isKinematic = true;
+        obj.GetComponent<NavMeshAgent>().enabled = false;
+        obj.transform.SetParent(collectionContainer);
+        obj.transform.rotation = Random.rotation;
+    }
+
+    public void CollectDebris(GameObject obj)
+    {
+        obj.GetComponent<Rigidbody>().isKinematic = true;
+        obj.transform.SetParent(collectionContainer);
+    }
+
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Human"))
@@ -46,6 +61,6 @@ public class Collect : MonoBehaviour
             other.transform.SetParent(collectionContainer);
         }
     }
-
+    */
 
 }
