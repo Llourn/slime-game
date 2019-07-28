@@ -6,6 +6,7 @@ public class FindSafety : MonoBehaviour
     public Transform target;
     private Transform slime;
     private NavMeshAgent agent;
+    private bool canWander = true;
     private bool isHidden = false;
     private bool isEaten = false;
 
@@ -18,6 +19,33 @@ public class FindSafety : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         slime = GameManager.instance.player.transform;
+    }
+
+    private void Update()
+    {
+        if (!isEaten &&agent.remainingDistance < 0.1f && !isHidden && !canWander) canWander = true;
+
+        if (!canWander) return;
+        timer += Time.deltaTime;
+        if (timer >= wanderTimer && !isEaten)
+        {
+            Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
+            agent.SetDestination(newPos);
+            timer = 0;
+        }
+    }
+
+    private Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
+    {
+        Vector3 randDirection = Random.insideUnitSphere * dist;
+
+        randDirection += origin;
+
+        NavMeshHit navHit;
+
+        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
+
+        return navHit.position;
     }
 
     public bool IsSafe()
@@ -38,6 +66,7 @@ public class FindSafety : MonoBehaviour
     public void SelectTarget()
     {
         if (isEaten) return;
+        canWander = false;
         target = null;
         float distance = Mathf.Infinity;
         for (int i = 0; i < GameManager.instance.hidingSpotManager.hidingSpots.Count; i++)

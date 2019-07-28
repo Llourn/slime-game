@@ -18,10 +18,8 @@ public class SlimeDetector : MonoBehaviour
         if(Physics.Raycast(transform.position, GameManager.instance.player.transform.position - transform.position, out hit, Mathf.Infinity, slimeMask))
         {
             Debug.DrawRay(transform.position, (GameManager.instance.player.transform.position - transform.position) * hit.distance, Color.red);
-            
-            if (hit.transform.CompareTag("Slime"))
+            if (hit.transform.CompareTag("Slime") || hit.transform.CompareTag("Eater"))
             {
-                Debug.Log("HIT: " + hit.transform.name);
                 findSafety.SelectTarget();
                 return true;
             }

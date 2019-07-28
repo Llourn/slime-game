@@ -19,7 +19,6 @@ public class HidingSpotDetector : MonoBehaviour
 
         if(other.CompareTag("RUN"))
         {
-            Debug.Log("OMGRUN!");
             findSafety.StopHiding();
         }
     }

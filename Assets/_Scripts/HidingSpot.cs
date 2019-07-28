@@ -8,7 +8,6 @@ public class HidingSpot : MonoBehaviour
     private void Start()
     {
         GameManager.instance.hidingSpotManager.RegisterSpot(this.transform);
-        Debug.Log("START HIDING SPOT");
     }
 
     private void OnTriggerEnter(Collider other)

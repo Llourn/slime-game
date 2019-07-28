@@ -4,7 +4,7 @@ public class TriggerDestruction : MonoBehaviour
 {
     public GameObject unbroken;
     public GameObject broken;
-    [SerializeField] Transform hidingSpot;
+    [SerializeField] Transform hidingSpot = null;
 
     private void OnTriggerEnter(Collider other)
     {
