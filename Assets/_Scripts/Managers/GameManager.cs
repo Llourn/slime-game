@@ -6,7 +6,11 @@ public class GameManager : MonoBehaviour
 
     public HidingSpotManager hidingSpotManager;
 
-    public GameObject player;
+    public GameObject player = null;
+
+    [Header("Manually attach reference.")]
+    public Transform humanContainer = null;
+    [SerializeField] GameObject playerPrefab = null;
 
     private void Awake()
     {
@@ -17,7 +21,10 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        player = GameObject.FindGameObjectWithTag("Slime");
+        if (player == null)
+        {
+            player = Instantiate(playerPrefab, transform.position, Quaternion.identity, transform);
+        }
         hidingSpotManager = GetComponent<HidingSpotManager>();
     }
 }
