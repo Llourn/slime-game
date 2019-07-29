@@ -14,15 +14,20 @@ public class Devour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Human"))
+
+        if(other.CompareTag("L1 Edible"))
         {
-            other.gameObject.GetComponent<FindSafety>().Ate();
-            collect.CollectHumans(other.gameObject);
-        }
-        else if(other.gameObject.layer == 13)
-        {
-            collect.CollectDebris(other.gameObject);
+            collect.Level1Collect(other.gameObject);
         }
 
+        if(other.CompareTag("L2 Edible"))
+        {
+            collect.Level2Collect(other.gameObject);
+        }
+
+        if (other.CompareTag("L3 Edible"))
+        {
+            collect.Level3Collect(other.gameObject);
+        }
     }
 }

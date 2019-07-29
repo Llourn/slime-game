@@ -7,6 +7,7 @@ public class FindSafety : MonoBehaviour
     private Transform slime;
     private NavMeshAgent agent;
     private bool canWander = true;
+    private bool slimeNear = false;
     private bool isHidden = false;
     private bool isEaten = false;
 
@@ -23,9 +24,14 @@ public class FindSafety : MonoBehaviour
 
     private void Update()
     {
-        if (!isEaten &&agent.remainingDistance < 0.1f && !isHidden && !canWander) canWander = true;
+        if (!isEaten && agent.remainingDistance < 0.1f && !isHidden && !canWander) canWander = true;
 
         if (!canWander) return;
+        WanderAround();
+    }
+
+    private void WanderAround()
+    {
         timer += Time.deltaTime;
         if (timer >= wanderTimer && !isEaten)
         {
@@ -67,23 +73,25 @@ public class FindSafety : MonoBehaviour
     {
         if (isEaten) return;
         canWander = false;
+        slimeNear = true;
         target = null;
         float distance = Mathf.Infinity;
         for (int i = 0; i < GameManager.instance.hidingSpotManager.hidingSpots.Count; i++)
         {
-            if (GameManager.instance.hidingSpotManager.hidingSpots.Count <= 0 || 
-                IsTheHidingSpotBetweenMeAndTheSlime(GameManager.instance.hidingSpotManager.hidingSpots[i].position) < 90.0f) continue;
+            // if (GameManager.instance.hidingSpotManager.hidingSpots.Count <= 0 || IsTheHidingSpotBetweenMeAndTheSlime(GameManager.instance.hidingSpotManager.hidingSpots[i].position) < 90.0f) continue;
 
             float t = Vector3.Distance(this.transform.position, GameManager.instance.hidingSpotManager.hidingSpots[i].position);
             if (t < distance) target = GameManager.instance.hidingSpotManager.hidingSpots[i];
         }
-
-        if(target == null)
+        
+        if (target == null)
         {
             Vector3 generalTarget = (transform.position - slime.position) * Vector3.Distance(transform.position, slime.position);
+            //agent.ResetPath();
             agent.destination = generalTarget;
             return;
         }
+        //agent.ResetPath();
         agent.destination = target.position;
     }
 

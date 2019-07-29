@@ -3,7 +3,27 @@ guid: 6ad55df2e6024304d893ec3776dea15d
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default
+    second: {fileID: 2100000, guid: 7f1b3470ab632844cab18090a7316c0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door frame and sills
+    second: {fileID: 2100000, guid: c28b0a6aec2ec594aa9732eb57d8e653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Inside
+    second: {fileID: 2100000, guid: d2a17577652a45b43aac74bd2978edaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window Frames
+    second: {fileID: 2100000, guid: ec49282347919084c999f8a140e094d8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

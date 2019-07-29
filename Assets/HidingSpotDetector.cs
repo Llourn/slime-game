@@ -12,6 +12,7 @@ public class HidingSpotDetector : MonoBehaviour
     {
         if (other.CompareTag("Hiding Spot"))
         {
+            if (findSafety == null) return;
             findSafety.StartHiding();
         }
 

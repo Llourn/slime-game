@@ -10,9 +10,12 @@ public class TriggerDestruction : MonoBehaviour
     {
         if (other.CompareTag("Slime"))
         {
-            GameManager.instance.hidingSpotManager.UnRegisterSpot(hidingSpot);
-            unbroken.SetActive(false);
-            broken.SetActive(true);
+            if(GameManager.instance.GetPlayerLevel() >= 3)
+            {
+                GameManager.instance.hidingSpotManager.UnRegisterSpot(hidingSpot);
+                unbroken.SetActive(false);
+                broken.SetActive(true);
+            }
         }
     }
 }

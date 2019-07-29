@@ -16,18 +16,21 @@ public class HumanSpawner : MonoBehaviour
     {
         for(int i = 0; i < humanCount; i++)
         {
-            Instantiate(humanPrefab, GetRandomPoint(), Quaternion.identity, GameManager.instance.humanContainer);
+            Vector3 point = GetRandomPoint();
+            while(Mathf.Abs(point.x) > 1000)
+            {
+                point = GetRandomPoint();
+            }
+            Instantiate(humanPrefab, point, Quaternion.identity, GameManager.instance.humanContainer);
         }
     }
 
     private Vector3 GetRandomPoint()
     {
         Vector3 randomPos = Random.insideUnitSphere * maxDistance + transform.position;
-        Debug.Log("random position: " + randomPos);
         NavMeshHit hit;
 
         NavMesh.SamplePosition(randomPos, out hit, maxDistance, NavMesh.AllAreas);
-        Debug.Log("hit position: " + hit.position);
         return hit.position;
     }
 

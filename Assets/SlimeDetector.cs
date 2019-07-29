@@ -9,7 +9,8 @@ public class SlimeDetector : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (findSafety.IsSafe()) return;
-        if (other.CompareTag("Slime")) IsSlimeInLineOfSight();
+        // if (other.CompareTag("Slime")) IsSlimeInLineOfSight();
+        if(other.CompareTag("Slime")) findSafety.SelectTarget();
     }
 
     private bool IsSlimeInLineOfSight()

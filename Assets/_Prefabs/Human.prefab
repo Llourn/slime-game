@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 7703636303186412455}
   m_Layer: 11
   m_Name: Human
-  m_TagString: Human
+  m_TagString: L1 Edible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

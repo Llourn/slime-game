@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7504998566130251778}
+  - component: {fileID: 4840422000124649685}
   m_Layer: 0
   m_Name: Stone small 01
-  m_TagString: Untagged
+  m_TagString: L1 Edible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4840422000124649685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6467659682055311712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36987817, y: 0.2475133, z: 0.3876034}
+  m_Center: {x: -0.01747924, y: 0.12984991, z: -0.006346464}
 --- !u!1001 &458087924557132426
 PrefabInstance:
   m_ObjectHideFlags: 0

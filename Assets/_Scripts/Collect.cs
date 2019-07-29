@@ -10,6 +10,12 @@ public class Collect : MonoBehaviour
 
     private float moveTowardsStep;
     private float disintegrateStep;
+    private PlayerController playerController;
+
+    private void Start()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
 
     private void Update()
     {
@@ -32,6 +38,7 @@ public class Collect : MonoBehaviour
 
     public void CollectHumans(GameObject obj)
     {
+        Debug.Log("Collected Human: " + obj.name);
         obj.GetComponent<Rigidbody>().isKinematic = true;
         obj.GetComponent<NavMeshAgent>().enabled = false;
         obj.transform.SetParent(collectionContainer);
@@ -40,27 +47,53 @@ public class Collect : MonoBehaviour
 
     public void CollectDebris(GameObject obj)
     {
+        Debug.Log("Collected Debris: " + obj.name);
         obj.GetComponent<Rigidbody>().isKinematic = true;
+        obj.GetComponent<Collider>().enabled = false;
         obj.transform.SetParent(collectionContainer);
     }
 
-    /*
-    private void OnTriggerEnter(Collider other)
+    private void CollectEtc(GameObject obj)
     {
-        if (other.CompareTag("Human"))
+        Debug.Log("Collected Etc: " + obj.name);
+        obj.transform.SetParent(collectionContainer);
+        obj.transform.rotation = Random.rotation;
+    }
+
+    public void Level1Collect(GameObject obj)
+    {
+        if (obj.layer == 11)
         {
-            other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            other.gameObject.GetComponent<NavMeshAgent>().enabled = false;
-            other.transform.SetParent(collectionContainer);
-            other.transform.rotation = Random.rotation;
+            obj.GetComponent<FindSafety>().Ate();
+            CollectHumans(obj);
+            playerController.IncreasePlayerScore(10);
+        }
+        else if (obj.layer == 13)
+        {
+            CollectDebris(obj);
+            playerController.IncreasePlayerScore(10);
+        }
+        else
+        {
+            CollectEtc(obj);
+            playerController.IncreasePlayerScore(10);
         }
 
-        if (other.gameObject.layer == 13)
-        {
-            other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            other.transform.SetParent(collectionContainer);
-        }
     }
-    */
+
+    public void Level2Collect(GameObject obj)
+    {
+        if (playerController.GetPlayerLevel() < 2) return;
+
+        CollectEtc(obj);
+        playerController.IncreasePlayerScore(25);
+    }
+
+    public void Level3Collect(GameObject obj)
+    {
+        if (playerController.GetPlayerLevel() < 3) return;
+        CollectEtc(obj);
+        playerController.IncreasePlayerScore(50);
+    }
 
 }

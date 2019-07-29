@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Manually attach reference.")]
     public Transform humanContainer = null;
-    [SerializeField] GameObject playerPrefab = null;
+    [SerializeField] private GameObject playerPrefab = null;
+
 
     private void Awake()
     {
@@ -26,5 +27,10 @@ public class GameManager : MonoBehaviour
             player = Instantiate(playerPrefab, transform.position, Quaternion.identity, transform);
         }
         hidingSpotManager = GetComponent<HidingSpotManager>();
+    }
+
+    public int GetPlayerLevel()
+    {
+        return player.GetComponent<PlayerController>().GetPlayerLevel();
     }
 }

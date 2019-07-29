@@ -12,6 +12,9 @@ TagManager:
   - Eater
   - Eaten
   - RUN
+  - L1 Edible
+  - L2 Edible
+  - L3 Edible
   layers:
   - Default
   - TransparentFX
