@@ -2,7 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a48b3f5-070b-4de3-bc40-699da6b159b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CapacityChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CapacityChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Devour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Devour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GetAngle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GetAngle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HidingSpotDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HidingSpotDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HumanSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HumanSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBrush.brush" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBrush.brush.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer 1.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer 1.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Custom Forward Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Custom Forward Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SlimeDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SlimeDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Materials/Blue apartment building/registered.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Materials/Blue apartment building/registered.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Materials/LRP Asset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Materials/LRP Asset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,17 +44,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+            <state relative-caret-position="60">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding>
-                <marker date="1560134950619" expanded="true" signature="6:129" ph="..." />
-                <marker date="1560134950619" expanded="true" signature="175:911" ph="{...}" />
-                <marker date="1560134950619" expanded="true" signature="333:397" ph="{...}" />
-                <marker date="1560134950619" expanded="true" signature="424:909" ph="{...}" />
-                <marker date="1560134950619" expanded="true" signature="464:903" ph="{...}" />
-                <marker date="1560134950619" expanded="true" signature="821:893" ph="{...}" />
+                <marker date="1562860171574" expanded="true" signature="61:462" ph="{...}" />
+                <marker date="1562860171574" expanded="true" signature="189:459" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -35,6 +62,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -56,12 +84,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
@@ -116,11 +153,12 @@
       <workItem from="1560081982883" duration="516000" />
       <workItem from="1560082567451" duration="1652000" />
       <workItem from="1560105481071" duration="20439000" />
+      <workItem from="1564863516179" duration="2735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22607000" />
+    <option name="totallyTimeSpent" value="25342000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -133,8 +171,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18859883" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19072989" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -178,24 +217,28 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="150">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <marker date="1564870927484" expanded="true" signature="6:105" ph="..." />
+            <marker date="1564870927484" expanded="true" signature="189:1282" ph="{...}" />
+            <marker date="1564870927484" expanded="true" signature="398:447" ph="{...}" />
+            <marker date="1564870927484" expanded="true" signature="474:676" ph="{...}" />
+            <marker date="1564870927484" expanded="true" signature="717:1279" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="60">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
-            <marker date="1560134950619" expanded="true" signature="6:129" ph="..." />
-            <marker date="1560134950619" expanded="true" signature="175:911" ph="{...}" />
-            <marker date="1560134950619" expanded="true" signature="333:397" ph="{...}" />
-            <marker date="1560134950619" expanded="true" signature="424:909" ph="{...}" />
-            <marker date="1560134950619" expanded="true" signature="464:903" ph="{...}" />
-            <marker date="1560134950619" expanded="true" signature="821:893" ph="{...}" />
+            <marker date="1562860171574" expanded="true" signature="61:462" ph="{...}" />
+            <marker date="1562860171574" expanded="true" signature="189:459" ph="{...}" />
           </folding>
         </state>
       </provider>
