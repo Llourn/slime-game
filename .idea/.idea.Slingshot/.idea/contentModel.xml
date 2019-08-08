@@ -21,12 +21,9 @@
         <e p="_Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
           <e p="CapacityChecker.cs" t="Include" />
-          <e p="CatchUp.cs" t="Include" />
           <e p="Collect.cs" t="Include" />
-          <e p="CollectHumans.cs" t="Include" />
           <e p="Devour.cs" t="Include" />
           <e p="FindSafety.cs" t="Include" />
-          <e p="GetAngle.cs" t="Include" />
           <e p="HidingSpot.cs" t="Include" />
           <e p="HidingSpotDetector.cs" t="Include" />
           <e p="HumanAttributeSelector.cs" t="Include" />
@@ -36,17 +33,12 @@
             <e p="HidingSpotManager.cs" t="Include" />
           </e>
           <e p="PlayerController.cs" t="Include" />
-          <e p="PlayerManager.cs" t="Include" />
           <e p="Roll.cs" t="Include" />
-          <e p="RunAway.cs" t="Include" />
           <e p="Scriptable Object" t="Include">
             <e p="HumanAttributes.cs" t="Include" />
           </e>
-          <e p="SimpleCameraController.cs" t="Include" />
           <e p="SlimeController.cs" t="Include" />
           <e p="SlimeDetector.cs" t="Include" />
-          <e p="SquashAndStretch.cs" t="Include" />
-          <e p="TouchController.cs" t="Include" />
           <e p="TriggerDestruction.cs" t="Include" />
           <e p="WallTrigger.cs" t="Include" />
         </e>

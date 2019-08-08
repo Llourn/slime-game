@@ -3,37 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="4a48b3f5-070b-4de3-bc40-699da6b159b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CapacityChecker.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CapacityChecker.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Devour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Devour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GetAngle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GetAngle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HidingSpotDetector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HidingSpotDetector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HumanSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HumanSpawner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBrush.brush" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBrush.brush.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewLayer 1.terrainlayer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewLayer 1.terrainlayer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewLayer.terrainlayer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Custom Forward Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Custom Forward Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SlimeDetector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SlimeDetector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Materials/Blue apartment building/registered.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Materials/Blue apartment building/registered.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Materials/LRP Asset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Materials/LRP Asset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/CatchUp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/CatchUp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/CollectHumans.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/CollectHumans.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GetAngle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GetAngle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/RunAway.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/RunAway.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SimpleCameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SimpleCameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SquashAndStretch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SquashAndStretch.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TouchController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TouchController.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,14 +30,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="45">
               <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding>
                 <marker date="1562860171574" expanded="true" signature="61:462" ph="{...}" />
                 <marker date="1562860171574" expanded="true" signature="189:459" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CapacityChecker.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <marker date="1564177060425" expanded="false" signature="6:78" ph="..." />
+                <marker date="1564177060425" expanded="true" signature="124:601" ph="{...}" />
+                <marker date="1564177060425" expanded="true" signature="187:256" ph="{...}" />
+                <marker date="1564177060425" expanded="true" signature="305:599" ph="{...}" />
+                <marker date="1564177060425" expanded="true" signature="359:593" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -63,6 +66,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CapacityChecker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -84,11 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -102,6 +101,11 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -153,12 +157,15 @@
       <workItem from="1560081982883" duration="516000" />
       <workItem from="1560082567451" duration="1652000" />
       <workItem from="1560105481071" duration="20439000" />
-      <workItem from="1564863516179" duration="2735000" />
+      <workItem from="1564863516179" duration="2736000" />
+      <workItem from="1564928885589" duration="1819000" />
+      <workItem from="1565013015634" duration="3067000" />
+      <workItem from="1565280335829" duration="973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25342000" />
+    <option name="totallyTimeSpent" value="31202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -171,9 +178,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19072989" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19712307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -232,13 +238,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SquashAndStretch.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SimpleCameraController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="45">
           <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
             <marker date="1562860171574" expanded="true" signature="61:462" ph="{...}" />
             <marker date="1562860171574" expanded="true" signature="189:459" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CapacityChecker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <marker date="1564177060425" expanded="false" signature="6:78" ph="..." />
+            <marker date="1564177060425" expanded="true" signature="124:601" ph="{...}" />
+            <marker date="1564177060425" expanded="true" signature="187:256" ph="{...}" />
+            <marker date="1564177060425" expanded="true" signature="305:599" ph="{...}" />
+            <marker date="1564177060425" expanded="true" signature="359:593" ph="{...}" />
           </folding>
         </state>
       </provider>
