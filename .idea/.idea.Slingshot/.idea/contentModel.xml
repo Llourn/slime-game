@@ -39,6 +39,7 @@
           </e>
           <e p="SlimeController.cs" t="Include" />
           <e p="SlimeDetector.cs" t="Include" />
+          <e p="TankController.cs" t="Include" />
           <e p="TriggerDestruction.cs" t="Include" />
           <e p="WallTrigger.cs" t="Include" />
         </e>
