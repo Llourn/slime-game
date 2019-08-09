@@ -10,12 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1022928142407754621}
   - component: {fileID: 4445907778947883560}
+  - component: {fileID: -2037179778146202300}
+  - component: {fileID: -5176834582801914383}
   m_Layer: 0
   m_Name: Stone Large 02
   m_TagString: L2 Edible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1022928142407754621
 Transform:
@@ -45,6 +47,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.6574366, z: 1.0382447}
   m_Center: {x: 0, y: 0.4156674, z: -0.019122362}
+--- !u!208 &-2037179778146202300
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839719138943623384}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.3287183, z: 0.5191225}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.4156674, z: -0.01912236}
+  m_TimeToStationary: 0.5
+--- !u!114 &-5176834582801914383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839719138943623384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &7559640924354946399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60,7 +94,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: c94f13ce2014d0447b4b1744cd2464ae,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c94f13ce2014d0447b4b1744cd2464ae,
         type: 3}

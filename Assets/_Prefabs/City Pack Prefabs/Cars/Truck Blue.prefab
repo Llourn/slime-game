@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6863955066077868171}
   - component: {fileID: 2958436879624783960}
+  - component: {fileID: -3932808288335190413}
   m_Layer: 0
   m_Name: Truck Blue
   m_TagString: L3 Edible
@@ -43,8 +44,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.56, y: 1.5877762, z: 3.643434}
-  m_Center: {x: 0, y: 1.0397034, z: 1.2060001}
+  m_Size: {x: 1.56, y: 1.8417783, z: 3.643434}
+  m_Center: {x: 0, y: 0.9127023, z: 1.2060001}
+--- !u!208 &-3932808288335190413
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811227815673650318}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.78, y: 0.920889, z: 1.821717}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0.9127023, z: 1.206}
+  m_TimeToStationary: 0.5
 --- !u!1 &3966684735523698798
 GameObject:
   m_ObjectHideFlags: 0

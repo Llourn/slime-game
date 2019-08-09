@@ -10,12 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5944925288170578030}
   - component: {fileID: 6996802258590471759}
+  - component: {fileID: 2989166631277120691}
+  - component: {fileID: -1894544309293326031}
   m_Layer: 0
   m_Name: Tree block 01
   m_TagString: L2 Edible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5944925288170578030
 Transform:
@@ -45,6 +47,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.69000006, y: 2.6627657, z: 0.6600001}
   m_Center: {x: 1.21, y: 1.2659823, z: 1.19}
+--- !u!208 &2989166631277120691
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860134941598537819}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.34500006, y: 1.331383, z: 0.33000004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 1.21, y: 1.265982, z: 1.19}
+  m_TimeToStationary: 0.5
+--- !u!114 &-1894544309293326031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860134941598537819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &3746620133703435248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60,7 +94,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 1251d5b9c43e9d04894c0c75a908d5a6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1251d5b9c43e9d04894c0c75a908d5a6,
         type: 3}

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6379929697940009427}
   - component: {fileID: 5095284257693201590}
+  - component: {fileID: 6979680173095961228}
   m_Layer: 0
   m_Name: Truck White
   m_TagString: L3 Edible
@@ -43,8 +44,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.56, y: 1.5877762, z: 5.3174114}
-  m_Center: {x: 0, y: 1.0397034, z: 2.0429888}
+  m_Size: {x: 1.56, y: 1.84125, z: 5.3174114}
+  m_Center: {x: 0, y: 0.9129665, z: 2.0429888}
+--- !u!208 &6979680173095961228
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402837814367645862}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.78, y: 0.920625, z: 2.6587055}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0.9129665, z: 2.042989}
+  m_TimeToStationary: 0.5
 --- !u!1 &4588328036557853752
 GameObject:
   m_ObjectHideFlags: 0

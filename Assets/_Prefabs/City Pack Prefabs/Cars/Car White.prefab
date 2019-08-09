@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7876613285693354845}
   - component: {fileID: 7798600124871461297}
+  - component: {fileID: -3752284457579807443}
   m_Layer: 0
   m_Name: Car White
   m_TagString: L2 Edible
@@ -43,8 +44,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.87903774, y: 0.6379046, z: 1.9181885}
-  m_Center: {x: -0.06048113, y: 0.43322015, z: -0.45909423}
+  m_Size: {x: 0.87903774, y: 0.75749147, z: 1.9181885}
+  m_Center: {x: -0.06048113, y: 0.37342682, z: -0.45909423}
+--- !u!208 &-3752284457579807443
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767709696738084780}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.43951884, y: 0.37874576, z: 0.959094}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: -0.06048113, y: 0.3734268, z: -0.4590942}
+  m_TimeToStationary: 0.5
 --- !u!1 &2335193113919881701
 GameObject:
   m_ObjectHideFlags: 0

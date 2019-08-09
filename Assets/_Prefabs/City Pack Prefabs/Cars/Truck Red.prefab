@@ -87,6 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8157044083292984278}
   - component: {fileID: 2634002383477433357}
+  - component: {fileID: 7618056668347819913}
   m_Layer: 0
   m_Name: Truck Red
   m_TagString: L3 Edible
@@ -120,5 +121,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.56, y: 1.5877762, z: 3.643434}
-  m_Center: {x: 0, y: 1.0397034, z: 1.2060001}
+  m_Size: {x: 1.56, y: 1.8431544, z: 3.643434}
+  m_Center: {x: 0, y: 0.91201425, z: 1.2060001}
+--- !u!208 &7618056668347819913
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9033180399010460698}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.78, y: 0.921577, z: 1.821717}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0.9120142, z: 1.206}
+  m_TimeToStationary: 0.5

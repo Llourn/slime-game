@@ -87,6 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1140294356760210832}
   - component: {fileID: -1311402084119369656}
+  - component: {fileID: 914557994941162558}
   m_Layer: 0
   m_Name: Car Red
   m_TagString: L2 Edible
@@ -120,5 +121,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9127742, y: 0.6379046, z: 1.9181885}
-  m_Center: {x: 0.16638705, y: 0.43322015, z: -0.45909423}
+  m_Size: {x: 0.9127742, y: 0.75301754, z: 1.9181885}
+  m_Center: {x: 0.16638705, y: 0.3756638, z: -0.45909423}
+--- !u!208 &914557994941162558
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642469392176514928}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.4563871, y: 0.37650874, z: 0.959094}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0.1663871, y: 0.3756638, z: -0.4590942}
+  m_TimeToStationary: 0.5

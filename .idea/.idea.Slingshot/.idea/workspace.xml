@@ -2,12 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a48b3f5-070b-4de3-bc40-699da6b159b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Tank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Tank.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Blue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Orange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Orange.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Pink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Pink.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car White.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Yellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Car Yellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Truck Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Truck Blue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Truck Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Truck Red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Truck White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Truck White.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Truck Yellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/City Pack Prefabs/Cars/Truck Yellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Finished Structures/Small blue apartment building.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Finished Structures/Small blue apartment building.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone Large 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone Large 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone Large 02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone Large 02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone Large 03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone Large 03.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone small 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone small 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone small 02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Stones/Stone small 02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree block 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree block 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree block 02 dark.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree block 02 dark.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree block 03 fall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree block 03 fall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree default 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree default 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree default 02 dark.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree default 02 dark.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree default 03 fall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree default 03 fall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine short square.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine short square.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine short.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine short.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small round 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small round 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small round 02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small round 02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small round 03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small round 03.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small round 04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small round 04.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small square 01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small square 01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small square 02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small square 02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small square 03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine small square 03.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine tall square.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine tall square.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine tall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree pine tall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree short dark.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree short dark.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree short fall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree short fall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree short.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree short.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree thin dark.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree thin dark.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree thin fall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree thin fall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree thin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Tree thin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Treestump round.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Treestump round.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Treestump side.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Treestump side.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Treestump.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Nature Pack Prefabs/Trees/Treestump.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 1/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 1/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 1/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 1/NavMesh.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="15">
               <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding>
                 <marker date="1562860171574" expanded="true" signature="61:462" ph="{...}" />
@@ -46,16 +88,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/TankController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <marker date="1565361040967" expanded="true" signature="6:54" ph="..." />
                 <marker date="1565361040967" expanded="true" signature="99:462" ph="{...}" />
                 <marker date="1565361040967" expanded="true" signature="220:346" ph="{...}" />
                 <marker date="1565361040967" expanded="true" signature="398:455" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/_Materials/Tank/Tank Projectile Smoke.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1565383100187" expanded="true" signature="38:1658" ph="{...}" />
+                <marker date="1565383100187" expanded="true" signature="59:263" ph="{...}" />
+                <marker date="1565383100187" expanded="true" signature="282:1633" ph="{...}" />
+                <marker date="1565383100187" expanded="true" signature="357:1622" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -71,6 +127,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CapacityChecker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SlimeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/TankController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Materials/Tank/Tank Projectile Smoke.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -81,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="153" />
     <option name="y" value="-17" />
     <option name="width" value="1440" />
@@ -156,12 +213,12 @@
       <workItem from="1564928885589" duration="1819000" />
       <workItem from="1565013015634" duration="3067000" />
       <workItem from="1565280335829" duration="1509000" />
-      <workItem from="1565358914355" duration="2585000" />
+      <workItem from="1565358914355" duration="3482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34323000" />
+    <option name="totallyTimeSpent" value="35220000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -174,6 +231,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19925413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -238,7 +296,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/SimpleCameraController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="15">
           <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
             <marker date="1562860171574" expanded="true" signature="61:462" ph="{...}" />
@@ -263,13 +321,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/TankController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <marker date="1565361040967" expanded="true" signature="6:54" ph="..." />
             <marker date="1565361040967" expanded="true" signature="99:462" ph="{...}" />
             <marker date="1565361040967" expanded="true" signature="220:346" ph="{...}" />
             <marker date="1565361040967" expanded="true" signature="398:455" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Materials/Tank/Tank Projectile Smoke.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1565383100187" expanded="true" signature="38:1658" ph="{...}" />
+            <marker date="1565383100187" expanded="true" signature="59:263" ph="{...}" />
+            <marker date="1565383100187" expanded="true" signature="282:1633" ph="{...}" />
+            <marker date="1565383100187" expanded="true" signature="357:1622" ph="{...}" />
           </folding>
         </state>
       </provider>

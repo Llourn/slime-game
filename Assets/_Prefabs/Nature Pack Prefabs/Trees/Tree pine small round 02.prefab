@@ -10,12 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5551937585852903367}
   - component: {fileID: 7492730465971068597}
+  - component: {fileID: 9000156790331387654}
+  - component: {fileID: -1584682665728388779}
   m_Layer: 0
   m_Name: Tree pine small round 02
   m_TagString: L2 Edible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5551937585852903367
 Transform:
@@ -45,6 +47,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.69000006, y: 3.3776612, z: 0.6600001}
   m_Center: {x: 0, y: 1.6174476, z: 0}
+--- !u!208 &9000156790331387654
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3091793779269001113}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.34500006, y: 1.6888305, z: 0.33000004}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 1.617448, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!114 &-1584682665728388779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3091793779269001113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &5887921650369405876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60,7 +94,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d9b8cceb6a50cea459c0be3efb6548e1,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d9b8cceb6a50cea459c0be3efb6548e1,
         type: 3}

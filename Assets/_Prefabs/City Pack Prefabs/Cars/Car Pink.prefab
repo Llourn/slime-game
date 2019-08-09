@@ -87,6 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1996486795069936946}
   - component: {fileID: 5474541901523549274}
+  - component: {fileID: -7931554501904955737}
   m_Layer: 0
   m_Name: Car Pink
   m_TagString: L2 Edible
@@ -120,5 +121,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.894744, y: 0.6379046, z: 1.9181885}
-  m_Center: {x: -0.052628018, y: 0.43322015, z: -0.45909423}
+  m_Size: {x: 0.894744, y: 0.77649504, z: 1.9181885}
+  m_Center: {x: -0.052628018, y: 0.36392504, z: -0.45909423}
+--- !u!208 &-7931554501904955737
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7305623047388197616}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.447372, y: 0.3882475, z: 0.959094}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: -0.05262802, y: 0.363925, z: -0.4590942}
+  m_TimeToStationary: 0.5

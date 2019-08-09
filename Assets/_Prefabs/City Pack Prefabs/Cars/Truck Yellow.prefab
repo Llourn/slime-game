@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491575991844045438}
   - component: {fileID: 7091002767606614307}
+  - component: {fileID: 1995648383679572143}
   m_Layer: 0
   m_Name: Truck Yellow
   m_TagString: L3 Edible
@@ -43,8 +44,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.56, y: 1.5877762, z: 5.3174114}
-  m_Center: {x: 0, y: 1.0397034, z: 2.0429888}
+  m_Size: {x: 1.56, y: 1.8378384, z: 5.3174114}
+  m_Center: {x: 0, y: 0.91467226, z: 2.0429888}
+--- !u!208 &1995648383679572143
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302742910766309230}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.78, y: 0.918919, z: 2.6587055}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0.9146723, z: 2.042989}
+  m_TimeToStationary: 0.5
 --- !u!1 &8445176002024069297
 GameObject:
   m_ObjectHideFlags: 0
