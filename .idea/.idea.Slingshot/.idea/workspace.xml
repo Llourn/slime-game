@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a48b3f5-070b-4de3-bc40-699da6b159b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Slingshot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ActivateTanks.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ActivateTanks.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RegisterDamage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RegisterDamage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SelfDestruct.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SelfDestruct.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Custom Forward Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Custom Forward Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PostProcessProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PostProcessProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TankProjectile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TankProjectile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Materials/Slime/Opaque Slime.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Materials/Slime/Opaque Slime.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Materials/Slime/Slime Trail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Materials/Slime/Slime Trail.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Models/Player/Slime.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Models/Player/Slime.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Managers/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Managers/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player - Slime.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player - Slime.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Tank Projectile Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Tank Projectile Explosion.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Tank Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Tank Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Models/Player/GrowToLevel2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Models/Player/GrowToLevel2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Models/Player/GrowToLevel3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Models/Player/GrowToLevel3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Models/Player/SlimeFeatures.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Models/Player/SlimeFeatures.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Tank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Tank.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Tank.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Tank.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TankController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/TankController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="270">
+              <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
               <folding>
                 <marker date="1565644748396" expanded="true" signature="6:44" ph="..." />
                 <marker date="1565644748396" expanded="true" signature="91:3707" ph="{...}" />
@@ -158,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="153" />
     <option name="y" value="-17" />
     <option name="width" value="1440" />
@@ -238,12 +214,12 @@
       <workItem from="1565475471561" duration="3466000" />
       <workItem from="1565535175901" duration="7426000" />
       <workItem from="1565563128234" duration="5101000" />
-      <workItem from="1565618820988" duration="11466000" />
+      <workItem from="1565618820988" duration="11593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64223000" />
+    <option name="totallyTimeSpent" value="64350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -256,7 +232,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20990942" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -418,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="270">
+          <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
           <folding>
             <marker date="1565644748396" expanded="true" signature="6:44" ph="..." />
             <marker date="1565644748396" expanded="true" signature="91:3707" ph="{...}" />
