@@ -43,6 +43,7 @@
           <e p="TriggerDestruction.cs" t="Include" />
           <e p="WallTrigger.cs" t="Include" />
         </e>
+        <e p="ActivateTanks.cs" t="Include" />
         <e p="Joystick Pack" t="Include">
           <e p="Examples" t="Include">
             <e p="JoystickPlayerExample.cs" t="Include" />
@@ -84,6 +85,8 @@
             <e p="NavMeshSurface.cs" t="Include" />
           </e>
         </e>
+        <e p="RegisterDamage.cs" t="Include" />
+        <e p="SelfDestruct.cs" t="Include" />
         <e p="Standard Assets" t="Include">
           <e p="Cameras" t="Include">
             <e p="CameraGuidelines.txt" t="Include" />
@@ -136,6 +139,7 @@
             </e>
           </e>
         </e>
+        <e p="TankProjectile.cs" t="Include" />
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
             <e p="Editor" t="Include">
