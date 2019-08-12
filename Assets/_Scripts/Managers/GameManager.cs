@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [Header("Manually attach reference.")]
     public Transform humanContainer = null;
     [SerializeField] private GameObject playerPrefab = null;
+    [SerializeField] private CameraFollow cameraFollow;
 
 
     private void Awake()
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour
         if (player == null)
         {
             player = Instantiate(playerPrefab, transform.position, Quaternion.identity, transform);
+            cameraFollow.target = player.transform;
+
         }
         hidingSpotManager = GetComponent<HidingSpotManager>();
     }

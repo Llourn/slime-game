@@ -80,6 +80,7 @@ MonoBehaviour:
   humanContainer: {fileID: 8224877031505574775}
   playerPrefab: {fileID: 8815132625144006751, guid: f29a75c825bcb73409fca6c6e8694fa4,
     type: 3}
+  cameraFollow: {fileID: 0}
 --- !u!114 &2383525047274765994
 MonoBehaviour:
   m_ObjectHideFlags: 0

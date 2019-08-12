@@ -9,7 +9,6 @@ public class SelfDestruct : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Is this getting called?");
         Destroy(gameObject, timeToDestroy);        
     }
 }

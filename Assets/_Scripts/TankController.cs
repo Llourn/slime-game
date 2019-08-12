@@ -59,8 +59,6 @@ public class TankController : MonoBehaviour
         var lookPosition = GameManager.instance.player.transform.position - transform.position;
         lookPosition.y = 0;
         var rotation = Quaternion.LookRotation(lookPosition);
-        Debug.Log("rotation y: " + rotation.y);
-
         turret.rotation = Quaternion.Slerp(turret.rotation, rotation, Time.deltaTime * turretRotationSpeed);
         
     }

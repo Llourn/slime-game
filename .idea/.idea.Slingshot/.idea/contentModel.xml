@@ -19,6 +19,7 @@
           </e>
         </e>
         <e p="_Scripts" t="Include">
+          <e p="ActivateTanks.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CapacityChecker.cs" t="Include" />
           <e p="Collect.cs" t="Include" />
@@ -33,17 +34,20 @@
             <e p="HidingSpotManager.cs" t="Include" />
           </e>
           <e p="PlayerController.cs" t="Include" />
+          <e p="RegisterDamage.cs" t="Include" />
           <e p="Roll.cs" t="Include" />
           <e p="Scriptable Object" t="Include">
             <e p="HumanAttributes.cs" t="Include" />
           </e>
+          <e p="SelfDestruct.cs" t="Include" />
+          <e p="SlimeAnimationSpeedMultiplier.cs" t="Include" />
           <e p="SlimeController.cs" t="Include" />
           <e p="SlimeDetector.cs" t="Include" />
           <e p="TankController.cs" t="Include" />
+          <e p="TankProjectile.cs" t="Include" />
           <e p="TriggerDestruction.cs" t="Include" />
           <e p="WallTrigger.cs" t="Include" />
         </e>
-        <e p="ActivateTanks.cs" t="Include" />
         <e p="Joystick Pack" t="Include">
           <e p="Examples" t="Include">
             <e p="JoystickPlayerExample.cs" t="Include" />
@@ -85,8 +89,6 @@
             <e p="NavMeshSurface.cs" t="Include" />
           </e>
         </e>
-        <e p="RegisterDamage.cs" t="Include" />
-        <e p="SelfDestruct.cs" t="Include" />
         <e p="Standard Assets" t="Include">
           <e p="Cameras" t="Include">
             <e p="CameraGuidelines.txt" t="Include" />
@@ -139,7 +141,6 @@
             </e>
           </e>
         </e>
-        <e p="TankProjectile.cs" t="Include" />
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
             <e p="Editor" t="Include">

@@ -1,104 +1,125 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    CharacterController characterController;
+    private CharacterController _characterController;
 
-    public Animator animator;
-
-    public float speed = 6.0f;
-    public float rotateSpeed = 3.0f;
-    public float jumpSpeed = 8.0f;
-    public float gravity = 20.0f;
-
+    [SerializeField] private float speed = 6.0f;
+    [SerializeField] private float rotateSpeed = 3.0f;
+    [SerializeField] private float gravity = 20.0f;
+    [SerializeField] private SlimeAnimationSpeedMultiplier sasm;
+    [SerializeField] private Animator modelAnimator;
+    [SerializeField] private int scoreRequiredForLevel2;
+    [SerializeField] private int scoreRequiredForLevel3;
     [SerializeField] private Vector3 level2Scale = Vector3.zero;
     [SerializeField] private float level2Speed = 6.0f;
     [SerializeField] private Vector3 level3Scale = Vector3.zero;
     [SerializeField] private float level3Speed = 8.0f;
+    [SerializeField] private bool pauseMovement = false;
+    
 
-    private ParticleSystem slimeTrail;
-    ParticleSystem.MainModule stMain;
+    private Animator _animator;
+    private ParticleSystem _slimeTrail;
+    private ParticleSystem.MainModule _stMain;
 
-    private float level1SlimeTrailSize = 2.8f;
-    private float level2SlimeTrailSize = 6.0f;
-    private float level3SlimeTrailSize = 11.0f;
+    private const float Level1SlimeTrailSize = 2.8f;
+    private const float Level2SlimeTrailSize = 6.0f;
+    private const float Level3SlimeTrailSize = 11.0f;
 
-    private int playerLevel = 1;
-    private int playerScore = 0;
+    private int _playerLevel = 1;
+    private int _playerScore;
 
-    private Vector3 moveDirection = Vector3.zero;
+    private Vector3 _moveDirection = Vector3.zero;
 
     private void Start()
     {
-        characterController = GetComponent<CharacterController>();
-        slimeTrail = GetComponentInChildren<ParticleSystem>();
-        stMain = slimeTrail.main;
+        _characterController = GetComponent<CharacterController>();
+        _animator = GetComponent<Animator>();
+        _slimeTrail = GetComponentInChildren<ParticleSystem>();
+        _stMain = _slimeTrail.main;
     }
 
     private void Update()
     {
-        if(characterController.isGrounded)
+        if (Input.GetKeyDown(KeyCode.L))
         {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            moveDirection *= speed;
+            if (_playerLevel == 1) Level2Granted();
+            else if (_playerLevel == 2) Level3Granted();
         }
-        moveDirection.y -= gravity * Time.deltaTime;
 
-        Vector3 rotTarget = new Vector3(moveDirection.x, 0.0f, moveDirection.z);
-        animator.SetFloat("moveSpeed", rotTarget.magnitude);
-        characterController.Move(moveDirection * Time.deltaTime);
+        if(_characterController.isGrounded && !pauseMovement)
+        {
+            _moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+            _moveDirection *= (speed * sasm.multiplier);
+        }
+        _moveDirection.y -= gravity * Time.deltaTime;
+
+        Vector3 rotTarget = new Vector3(_moveDirection.x, 0.0f, _moveDirection.z);
+        modelAnimator.SetFloat("moveSpeed", rotTarget.magnitude);
+        _characterController.Move(_moveDirection * Time.deltaTime);
 
         float step = rotateSpeed * Time.deltaTime;
         if (rotTarget == Vector3.zero) return;
         transform.rotation = Quaternion.LookRotation(rotTarget);
+
     }
 
     public int GetPlayerLevel()
     {
-        return playerLevel;
+        return _playerLevel;
     }
 
     public void IncreasePlayerLevel()
     {
-        playerLevel++;
+        _playerLevel++;
     }
 
     public void ResetPlayerLevel()
     {
-        playerLevel = 1;
+        _playerLevel = 1;
         transform.localScale = Vector3.one;
         speed = 4.0f;
-        stMain.startSize = level1SlimeTrailSize;
+        _stMain.startSize = Level1SlimeTrailSize;
     }
 
     public void IncreasePlayerScore(int amount)
     {
-        playerScore += amount;
-        if (playerScore > 100 && playerLevel == 1)
+        _playerScore += amount;
+        if (_playerScore > scoreRequiredForLevel2 && _playerLevel == 1)
         {
-            playerLevel = 2;
-            SlimeLevelUp();
-            stMain.startSize = level2SlimeTrailSize;
+            Level2Granted();
         }
-        if (playerScore > 500 && playerLevel == 2)
+        if (_playerScore > scoreRequiredForLevel3 && _playerLevel == 2)
         {
-            playerLevel = 3;
-            SlimeLevelUp();
-            stMain.startSize = level3SlimeTrailSize;
+            Level3Granted();
         }
     }
 
-    private void SlimeLevelUp()
+    private void Level2Granted()
     {
-        if(playerLevel == 2)
-        {
-            transform.localScale = level2Scale;
-            speed = level2Speed;
-        }
-        else if(playerLevel == 3)
-        {
-            transform.localScale = level3Scale;
-            speed = level3Speed;
-        }
+        Debug.Log("LEVEL 2 GRANTED");
+        _playerLevel++;
+        pauseMovement = true;
+        _animator.SetTrigger("GrowToLevel2");
+        speed = level2Speed;
+        _stMain.startSize = Level2SlimeTrailSize;
     }
+
+    private void Level3Granted()
+    {
+        _playerLevel++;
+        Debug.Log("LEVEL 3 GRANTED");
+        pauseMovement = true;
+        _animator.SetTrigger("GrowToLevel3");
+        speed = level3Speed;
+        _stMain.startSize = Level3SlimeTrailSize;
+    }
+
+    public void EnablePlayerMovement()
+    {
+        pauseMovement = false;
+        _moveDirection = Vector3.zero;
+    }
+    
 }

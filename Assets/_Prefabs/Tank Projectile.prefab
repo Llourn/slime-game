@@ -5474,3 +5474,5 @@ MonoBehaviour:
   launchForce: 25
   explosion: {fileID: 1587857605923143108, guid: a45c46d9231a9674da8ebed5235ca294,
     type: 3}
+  projectileModel: {fileID: 7752168642403735196}
+  timeToSelfDestruct: 1
